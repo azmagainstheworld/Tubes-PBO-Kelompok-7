@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffc2d1;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gotpb.tubespbokelompok7.LoginController">
+   <children>
+      <TextField fx:id="fieldUsername" alignment="TOP_CENTER" layoutX="225.0" layoutY="174.0" promptText="Username" />
+      <TextField fx:id="fieldEmail" alignment="TOP_CENTER" layoutX="225.0" layoutY="210.0" promptText="Email" />
+      <TextField fx:id="fieldPassword" alignment="TOP_CENTER" layoutX="225.0" layoutY="246.0" promptText="Password" />
+      <Label layoutX="167.0" layoutY="127.0" text="WELCOME TO GO TPB">
+         <font>
+            <Font name="Square721 BT Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="225.0" layoutY="323.0" text="Belum punya akun?" />
+      <Hyperlink layoutX="329.0" layoutY="320.0" onAction="#toRegister" text="Register." />
+      <Button layoutX="260.0" layoutY="287.0" mnemonicParsing="false" onAction="#masukAkun" text="Masuk akun" />
+   </children>
+</AnchorPane>
