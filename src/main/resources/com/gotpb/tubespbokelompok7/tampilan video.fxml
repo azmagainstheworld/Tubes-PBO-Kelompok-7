@@ -12,10 +12,10 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.media.MediaView?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #d4afb9;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #d4afb9;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gotpb.tubespbokelompok7.VideoController">
    <children>
-      <TextField alignment="TOP_CENTER" layoutX="426.0" layoutY="371.0" prefHeight="29.0" prefWidth="135.0" promptText="Buat komentar" />
-      <Button contentDisplay="GRAPHIC_ONLY" layoutX="561.0" layoutY="372.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="25.0" text="Button">
+      <TextField fx:id="fieldKomentar" alignment="TOP_CENTER" layoutX="426.0" layoutY="371.0" prefHeight="29.0" prefWidth="135.0" promptText="Buat komentar" />
+      <Button contentDisplay="GRAPHIC_ONLY" layoutX="561.0" layoutY="372.0" mnemonicParsing="false" onAction="#kirimKomentar" prefHeight="18.0" prefWidth="25.0" text="Button">
          <graphic>
             <ImageView fitHeight="20.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -90,11 +90,42 @@
          <content>
             <VBox prefHeight="400.0" prefWidth="427.0" spacing="10.0" style="-fx-background-color: #d4afb9;">
                <children>
-                  <MediaView fitHeight="200.0" fitWidth="200.0" />
-                  <Label prefHeight="51.0" prefWidth="395.0" text="Judul video" />
-                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="100.0">
+                  <MediaView fx:id="mediaView" fitHeight="200.0" fitWidth="380.0" />
+                  <Label prefHeight="35.0" prefWidth="387.0" text="Judul video" />
+                  <HBox prefHeight="49.0" prefWidth="387.0">
                      <children>
-                        <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefWidth="36.0" text="Button">
+                        <Button mnemonicParsing="false" onAction="#play" prefHeight="23.0" prefWidth="27.0">
+                           <graphic>
+                              <ImageView fitHeight="18.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Image/pngtree-vector-play-icon-png-image_956416.jpg" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#pause" prefHeight="25.0" prefWidth="28.0">
+                           <graphic>
+                              <ImageView fitHeight="18.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Image/pngtree-pause-vector-icon-png-image_470715.jpg" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#reset" prefHeight="17.0" prefWidth="35.0">
+                           <graphic>
+                              <ImageView fitHeight="18.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Image/kisspng-reset-button-icon-restart-png-free-download-5a75888d69d601.2504583515176521094335.jpg" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="49.0" prefWidth="387.0" spacing="100.0">
+                     <children>
+                        <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#toRating" prefWidth="36.0" text="Button">
                            <graphic>
                               <ImageView fitHeight="35.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
@@ -104,10 +135,10 @@
                            </graphic>
                         </Button>
                         <Label prefHeight="29.0" prefWidth="66.0" text="0x ditonton" />
-                        <Button mnemonicParsing="false" text="Take Quiz" />
+                        <Button mnemonicParsing="false" onAction="#takeQuiz" text="Take Quiz" />
                      </children>
                   </HBox>
-                  <Label prefHeight="164.0" prefWidth="383.0" text="Deskripsi video" />
+                  <Label prefHeight="56.0" prefWidth="383.0" text="Deskripsi video" />
                </children>
                <padding>
                   <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
