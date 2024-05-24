@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gotpb.tubespbokelompok7.controllers.DashboardController">
+   <children>
+      <Pane prefHeight="86.0" prefWidth="600.0" style="-fx-border-image-width: 1px; -fx-border-color: black; -fx-background-color: #FFFFF0;">
+         <children>
+            <Label alignment="TOP_CENTER" contentDisplay="RIGHT" layoutX="231.0" layoutY="21.0" text="GO TPB" textFill="INDIANRED">
+               <font>
+                  <Font name="Square721 BT Bold" size="35.0" />
+               </font>
+            </Label>
+            <Button contentDisplay="GRAPHIC_ONLY" layoutX="23.0" layoutY="34.0" mnemonicParsing="false" onAction="#openMenuTestimoni" text="Button">
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Image/png-transparent-comment-dots-regular-icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+      <ScrollPane fx:id="menuTestimoni" hbarPolicy="NEVER" layoutY="86.0" opacity="0.0" style="-fx-background-color: transparent;">
+         <content>
+            <VBox fx:id="listViewTestimoni" prefHeight="283.0" prefWidth="151.0" style="-fx-background-color: #FFFFF0;" />
+         </content>
+      </ScrollPane>
+      <ScrollPane hbarPolicy="NEVER" layoutX="145.0" layoutY="86.0" style="-fx-background-color: transparent;">
+         <content>
+            <VBox prefHeight="317.0" prefWidth="456.0">
+               <children>
+                  <HBox prefHeight="121.0" prefWidth="456.0" spacing="16.0" style="-fx-background-color: #cd5c5c;">
+                     <children>
+                        <VBox alignment="CENTER" onMouseClicked="#toVideoPage">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#openMediaView" prefHeight="121.0" prefWidth="206.0">
+                                 <graphic>
+                                    <ImageView fitHeight="113.0" fitWidth="214.0" onMouseClicked="#toVideoPage" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Image/rey%20kalkulus.jpeg" />
+                                       </image></ImageView>
+                                 </graphic>
+                              </Button>
+                              <Label text="Judul Video" textAlignment="CENTER" textFill="IVORY" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#openMediaView" text="Button">
+                                 <graphic>
+                                    <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Image/celo%20fisdas.jpeg" />
+                                       </image></ImageView>
+                                 </graphic>
+                              </Button>
+                              <Label text="Judul Video" textAlignment="CENTER" textFill="IVORY" />
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </padding>
+                  </HBox>
+                  <HBox prefHeight="121.0" prefWidth="456.0" spacing="16.0" style="-fx-background-color: #cd5c5c;">
+                     <children>
+                        <VBox alignment="CENTER">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#openMediaView">
+                                 <graphic>
+                                    <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Image/celo%20kimdas.jpeg" />
+                                       </image></ImageView>
+                                 </graphic>
+                              </Button>
+                              <Label text="Judul Video" textAlignment="CENTER" textFill="IVORY" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#openMediaView" textFill="IVORY">
+                                 <graphic>
+                                    <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Image/rey%20alpro.jpeg" />
+                                       </image></ImageView>
+                                 </graphic>
+                              </Button>
+                              <Label text="Judul Video" textAlignment="CENTER" textFill="WHITE" />
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+      <TextField fx:id="fieldTestimoni" alignment="TOP_CENTER" layoutY="371.0" prefHeight="29.0" prefWidth="119.0" promptText="Buat komentar" text="Buat testimoni" />
+      <Button contentDisplay="GRAPHIC_ONLY" layoutX="119.0" layoutY="372.0" mnemonicParsing="false" onAction="#kirimTestimoni" prefHeight="23.0" prefWidth="24.0" text="Button">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Image/share-png-file-share-icon-free-download-1156313309811bbndeiii.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

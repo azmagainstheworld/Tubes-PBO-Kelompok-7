@@ -13,25 +13,25 @@
    <children>
       <ScrollPane layoutY="7.0">
          <content>
-            <VBox prefHeight="400.0" prefWidth="600.0" spacing="15.0" style="-fx-background-color: #d4afb9;">
+            <VBox prefHeight="400.0" prefWidth="600.0" spacing="15.0" style="-fx-background-color: #FFFFF0;">
                <children>
-                  <Label alignment="CENTER" prefHeight="33.0" prefWidth="563.0" text="QUIZ" textAlignment="CENTER">
+                  <Label alignment="CENTER" prefHeight="33.0" prefWidth="563.0" text="QUIZ" textAlignment="CENTER" textFill="INDIANRED">
                      <font>
                         <Font name="Bauhaus 93" size="28.0" />
                      </font>
                   </Label>
-                  <Label prefHeight="53.0" prefWidth="495.0" text=" Soal 1" />
-                  <RadioButton mnemonicParsing="false" text="RadioButton" />
-                  <RadioButton mnemonicParsing="false" text="RadioButton" />
-                  <RadioButton mnemonicParsing="false" text="RadioButton" />
-                  <Label prefHeight="53.0" prefWidth="495.0" text="Soal 2" />
-                  <RadioButton mnemonicParsing="false" text="RadioButton" />
-                  <RadioButton mnemonicParsing="false" text="RadioButton" />
-                  <RadioButton mnemonicParsing="false" text="RadioButton" />
-                  <Label prefHeight="53.0" prefWidth="495.0" text="Soal 3" />
-                  <RadioButton mnemonicParsing="false" text="RadioButton" />
-                  <RadioButton mnemonicParsing="false" text="RadioButton" />
-                  <RadioButton mnemonicParsing="false" text="RadioButton" />
+                  <Label prefHeight="53.0" prefWidth="495.0" text=" Soal 1" textFill="INDIANRED" />
+                  <RadioButton mnemonicParsing="false" text="RadioButton" textFill="INDIANRED" />
+                  <RadioButton mnemonicParsing="false" text="RadioButton" textFill="INDIANRED" />
+                  <RadioButton mnemonicParsing="false" text="RadioButton" textFill="INDIANRED" />
+                  <Label prefHeight="53.0" prefWidth="495.0" text="Soal 2" textFill="INDIANRED" />
+                  <RadioButton mnemonicParsing="false" text="RadioButton" textFill="INDIANRED" />
+                  <RadioButton mnemonicParsing="false" text="RadioButton" textFill="INDIANRED" />
+                  <RadioButton mnemonicParsing="false" text="RadioButton" textFill="INDIANRED" />
+                  <Label prefHeight="53.0" prefWidth="495.0" text="Soal 3" textFill="INDIANRED" />
+                  <RadioButton mnemonicParsing="false" text="RadioButton" textFill="INDIANRED" />
+                  <RadioButton mnemonicParsing="false" text="RadioButton" textFill="INDIANRED" />
+                  <RadioButton mnemonicParsing="false" text="RadioButton" textFill="INDIANRED" />
                   <Button mnemonicParsing="false" text="Submit" />
                   <Label opacity="0.0" text="Score :" />
                </children>

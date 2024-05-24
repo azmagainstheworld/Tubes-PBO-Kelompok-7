@@ -11,6 +11,7 @@ version '1.0-SNAPSHOT'
 
 repositories {
   mavenCentral()
+  jcenter()
 }
 
 ext {
@@ -39,6 +40,7 @@ dependencies {
   testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
   testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
   implementation("org.openjfx:javafx-media:18.0.1")
+  implementation('org.mariadb.jdbc:mariadb-java-client:2.1.2')
 }
 
 test {
